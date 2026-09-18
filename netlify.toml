@@ -1,6 +1,6 @@
 [build]
-publish = "tactic-board-football/export/web"
-command = "echo 'Abre Godot → Project → Export → Web (preset Web)'"
+  publish = "public"
+  command = "true"
 
 [[headers]]
   for = "/*"

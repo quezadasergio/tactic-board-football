@@ -16,6 +16,10 @@ export_credentials.cfg
 data_*/
 mono_crash.*.json
 
-# Build / export
+# Local Godot export (not published directly)
 build/
 export/
+
+# Netlify serve directory is tracked in git
+!public/
+!public/**

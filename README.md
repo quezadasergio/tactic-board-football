@@ -8,9 +8,17 @@ El juego está en la carpeta [`tactic-board-football/`](tactic-board-football/).
 
 ## Export a Netlify
 
+Netlify publica la carpeta `public/` (build web ya generado).
+
 1. Abre el subproyecto en Godot 4.7.
-2. **Project → Export → Web** hacia `tactic-board-football/export/web/` (preset incluido).
-3. Conecta el repo a Netlify; el `netlify.toml` de la raíz publica esa carpeta.
+2. **Project → Export → Web** hacia `tactic-board-football/export/web/`.
+3. Copia el build a `public/`:
+
+```bash
+rsync -a --exclude='*.import' tactic-board-football/export/web/ public/
+```
+
+4. Commit + push a `main`.
 
 ## Créditos
 
